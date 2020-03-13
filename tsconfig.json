@@ -1,7 +1,25 @@
 {
-	"extends": "../../tsconfig.json",
-	"include": ["./src"],
+	"include": [
+		"./src"
+	],
 	"compilerOptions": {
-		"outDir": "./lib"
+		"outDir": "./lib",
+		"target": "es5",
+		"module": "commonjs",
+		"lib": [
+			"esnext"
+		],
+		"downlevelIteration": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"noUnusedLocals": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"skipLibCheck": true,
+		"declaration": true,
+		"declarationMap": true
 	}
 }
